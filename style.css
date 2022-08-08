@@ -35,6 +35,10 @@ ul {
   margin: 20px 10px;
 }
 
+.btn {
+ border-width: 1.5px;
+}
+
 .centro_yp {
   margin: 35px;
 }
