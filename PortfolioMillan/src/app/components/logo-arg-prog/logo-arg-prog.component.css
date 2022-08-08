@@ -20,8 +20,14 @@
     }
     
 .centro_img {
+
         margin: 20px;
     }
+
+.btn {
+    border-width: 1.5px;
+}    
+
 
 /*--- Para la vista en celular ----*/
 @media (max-width: 575px){
