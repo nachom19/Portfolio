@@ -1,0 +1,21 @@
+.img-fluid {
+    border-radius: 50%;
+}
+
+.row {
+    padding:20px;
+}
+
+div {
+    text-align:center;
+}
+
+.nombre {
+font-weight:bold;
+margin-top: 10%;
+}
+
+h3 {
+    font-weight:bold;
+    margin-top: 3%;
+    }
