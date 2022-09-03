@@ -11,7 +11,7 @@ h3, h4 {
     display: inline;
 }
 
-ul {
+tr {
     list-style-type: none;
     padding: 5px;
     margin-left: 10%;
