@@ -9,10 +9,49 @@ h2 {
 
 h3, h4 {
     display: inline;
+    text-align: center;
 }
 
-tr {
+.table {
     list-style-type: none;
     padding: 5px;
     margin-left: 10%;
+    box-align: center;
 }
+
+.descripciones {
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.btnEditDelete{
+    width: 50px;
+    margin-top: 15px;
+}
+
+.funEdit {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+/*--- Para la vista en celular ----*/
+@media (max-width: 575px){
+
+    .container{
+            flex-direction: column;
+        }
+    
+    .redes {
+              display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+        }
+         }

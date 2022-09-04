@@ -1,25 +1,28 @@
 <div class="row"> 
-    <h2> Experiencia Laboral </h2>
-    <div class="col-lg-2">
-      <button type="button" class="btn btn-outline-info" routerLink="/nuevaexp" *ngIf="isLogged"> 
+  <div class="container">
+    <div class="col-lg-3"><h2> Experiencia Laboral </h2></div>  
+  <div class="col-lg-2">
+      <button type="button" class="btn btn-outline-info funEdit" routerLink="/nuevaexp" *ngIf="isLogged"> 
         <i class="bi bi-plus-lg"></i></button>
-    </div>
-
-    <div class="col-lg-10"> 
+  </div>
+</div>
+  
+<div class="col-lg-10"> 
       <table class="table"> 
         <tbody> 
           <tr *ngFor="let Experiencia of exp"> 
-            <td><h2>{{Experiencia.nombreE}}</h2></td>
-            <td>{{Experiencia.descripcionE}}</td>
-            <td *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="/actualizar/{{Experiencia.id}}">
+            <td><h3 class="container">{{Experiencia.nombreE}}</h3></td>
+            <td class="descripciones">{{Experiencia.descripcionE}}</td>
+          <div class="container btnEditDelete">
+            <td *ngIf="isLogged"><button class="btn btn-outline-success funEdit" routerLink="/actualizar/{{Experiencia.id}}">
               <i class="bi bi-pencil"></i></button>
             </td>
-            <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Experiencia.id)">
+            <td *ngIf="isLogged"><button class="btn btn-outline-danger funEdit " (click)="delete(Experiencia.id)">
               <i class="bi bi-trash"></i></button>
             </td>
+          </div>
           </tr>
         </tbody>
       </table>
-      </div>
-          </div>
- 
+  </div>
+</div>
