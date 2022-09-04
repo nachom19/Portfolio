@@ -5,10 +5,14 @@
 h2 {
     padding:5px;
     font-weight:bold;
+    text-align: center;
 }
 
-h3, h4 {
-    display: inline;
+h3 {
+    text-align: center;
+}
+
+td {
     text-align: center;
 }
 
