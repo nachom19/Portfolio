@@ -1,17 +1,28 @@
 <div class="row"> 
-    <h2> Educación </h2>
-    <div class="col-lg-10"> 
-      <ul>
-        <li>
-            <h3>Educación</h3> - <h4>Años trabajados</h4>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eveniet eligendi natus fugiat quis eos, dolorem, provident minus perferendis at rem saepe neque voluptatum molestias magni expedita eaque qui unde.</p>
-      </ul>
-      <ul>
-        <li>
-            <h3>Educación 2</h3> - <h4>Años trabajados</h4>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eveniet eligendi natus fugiat quis eos, dolorem, provident minus perferendis at rem saepe neque voluptatum molestias magni expedita eaque qui unde.</p>
-      </ul>
-      </div>
+  <div class="container">
+    <div class="col-lg-3"><h2> Educación </h2></div>  
+  <div class="col-lg-2">
+      <button type="button" class="btn btn-outline-info funEdit" routerLink="/nuevaedu" *ngIf="isLogged"> 
+        <i class="bi bi-plus-lg"></i></button>
+  </div>
+</div>
+  
+<div class="col-lg-10"> 
+      <table class="table"> 
+        <tbody> 
+          <tr *ngFor="let Educacion of edu"> 
+            <td><h3 class="container">{{Educacion.nombreE}}</h3></td>
+            <td class="descripciones">{{Educacion.descripcionE}}</td>
+          <div class="container btnEditDelete">
+            <td *ngIf="isLogged"><button class="btn btn-outline-success funEdit" routerLink="/actualizar_edu/{{Educacion.id}}">
+              <i class="bi bi-pencil"></i></button>
+            </td>
+            <td *ngIf="isLogged"><button class="btn btn-outline-danger funEdit " (click)="delete(Educacion.id)">
+              <i class="bi bi-trash"></i></button>
+            </td>
           </div>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>

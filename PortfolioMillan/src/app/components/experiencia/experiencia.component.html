@@ -14,7 +14,7 @@
             <td><h3 class="container">{{Experiencia.nombreE}}</h3></td>
             <td class="descripciones">{{Experiencia.descripcionE}}</td>
           <div class="container btnEditDelete">
-            <td *ngIf="isLogged"><button class="btn btn-outline-success funEdit" routerLink="/actualizar/{{Experiencia.id}}">
+            <td *ngIf="isLogged"><button class="btn btn-outline-success funEdit" routerLink="/actualizar_exp/{{Experiencia.id}}">
               <i class="bi bi-pencil"></i></button>
             </td>
             <td *ngIf="isLogged"><button class="btn btn-outline-danger funEdit " (click)="delete(Experiencia.id)">
