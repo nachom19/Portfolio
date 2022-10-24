@@ -20,3 +20,22 @@ h3 {
     font-weight:bold;
     margin-top: 3%;
     }
+
+h2 {
+    font-weight:bold;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+    
+.funEdit {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
