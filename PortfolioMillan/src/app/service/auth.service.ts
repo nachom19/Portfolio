@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = 'https://backendportfoliomillan.herokuapp.com/auth/';
+  authURL = 'https://portfolio-backend-production-195b.up.railway.app/auth/';
 
   constructor(private httpClient: HttpClient) {}
 

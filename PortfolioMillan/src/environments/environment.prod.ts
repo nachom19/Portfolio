@@ -8,5 +8,6 @@ export const environment = {
     authDomain: 'portfoliomillan-frontend.firebaseapp.com',
     messagingSenderId: '560422239896',
   },
-  production: true
+  production: true,
+  URL: 'https://portfolio-backend-production-195b.up.railway.app/ '
 };
